@@ -1,7 +1,20 @@
+@font-face {
+  font-family: dribbble;
+  src: url(/Unconfirmed\ 33509.crdownload);
+}
+@font-face {
+  font-family:d1 ;
+  src: url(/WFVisualSans-RegularText-46461986901f80620e484e70aa8cbb90ede25a01351d464819a4e47a3f38ea43.woff2);
+}
+@font-face {
+  font-family:d2;
+  src: url(/WFVisualSans-SemiBold-aa0e55353b6a1b897f76a0fcbf5561fa243ce1b8b9f6aebcb5a186f0536713b1.woff2);
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family:d2;
 }
 
 html,
@@ -9,7 +22,7 @@ body {
   height: 100%;
   width: 100%;
 }
-#main {
+/* #main {
   display: flex;
   gap: 30px;
   width: 100%;
@@ -55,4 +68,54 @@ body {
 }
 .card:hover .bottom{
   bottom: 0%;
+} */
+
+#nav{
+  padding-left: 50px;
+  padding-right: 50px;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  background-color: lightblue;
+}
+#nav #icon{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 560px;
+  gap: 20px;
+}
+#nav #icon i{
+  font-size: 20px;
+}
+#nav #icon #profileicon{
+    font-size: 50px;
+}
+#nav a{
+    text-decoration: none;
+    color: black;
+}
+#main-container{
+  height: 90%;
+  display: flex;
+  width: 100%;
+  background-color: lightseagreen;
+  gap: 40px;
+  padding: 20px;
+}
+#main-container #section-1{
+  height: 90%;
+  width: 30%;
+  background-color: tomato;
+  border: 2px solid black;
+}
+#main-container #section-2{
+  margin-left: 230px;
+  height: 90%;
+  width: 45%;
+  background-color: tomato;
+  border: 2px solid black;
+  border-radius: 30px;
 }
