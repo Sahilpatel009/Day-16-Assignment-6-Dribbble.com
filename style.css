@@ -2,19 +2,22 @@
   font-family: dribbble;
   src: url(/Unconfirmed\ 33509.crdownload);
 }
+
 @font-face {
-  font-family:d1 ;
+  font-family: d1;
   src: url(/WFVisualSans-RegularText-46461986901f80620e484e70aa8cbb90ede25a01351d464819a4e47a3f38ea43.woff2);
 }
+
 @font-face {
-  font-family:d2;
+  font-family: d2;
   src: url(/WFVisualSans-SemiBold-aa0e55353b6a1b897f76a0fcbf5561fa243ce1b8b9f6aebcb5a186f0536713b1.woff2);
 }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family:d2;
+  font-family: d2;
 }
 
 html,
@@ -22,6 +25,7 @@ body {
   height: 100%;
   width: 100%;
 }
+
 /* #main {
   display: flex;
   gap: 30px;
@@ -70,7 +74,7 @@ body {
   bottom: 0%;
 } */
 
-#nav{
+#nav {
   padding-left: 50px;
   padding-right: 50px;
   display: flex;
@@ -80,24 +84,29 @@ body {
   width: 100%;
   background-color: lightblue;
 }
-#nav #icon{
+
+#nav #icon {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-left: 560px;
   gap: 20px;
 }
-#nav #icon i{
+
+#nav #icon i {
   font-size: 20px;
 }
-#nav #icon #profileicon{
-    font-size: 50px;
+
+#nav #icon #profileicon {
+  font-size: 50px;
 }
-#nav a{
-    text-decoration: none;
-    color: black;
+
+#nav a {
+  text-decoration: none;
+  color: black;
 }
-#main-container{
+
+#main-container {
   height: 90%;
   display: flex;
   width: 100%;
@@ -105,17 +114,119 @@ body {
   gap: 40px;
   padding: 20px;
 }
-#main-container #section-1{
+
+#main-container #section-1 {
+  padding: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
   height: 90%;
-  width: 30%;
-  background-color: tomato;
+  width: 40%;
+  background-color: rgb(255, 255, 255);
   border: 2px solid black;
 }
-#main-container #section-2{
-  margin-left: 230px;
+#main-container #section-1 h1{
+  font-size: 48px;
+  font-weight: 300px;
+   line-height: 1.1;
+}
+#main-container #section-1 h2{
+  padding-top: 10px;
+  font-size: 15px;
+  font-weight: 100px;
+   line-height: 1.1;
+   color: #4E4E5E;
+}
+
+#main-container #section-1 #checkablebtn {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  width: 100%;
+  padding: 0px 10px;
+}
+#main-container #section-1 #checkablebtn button{
+  font-size: 14px;
+  border-radius: 30px;
+  padding: 10px 20px;
+  border: none;
+}
+
+#main-container #section-1 #searchbar {
+  height: 50px;
+  width: 100%;
+  background-color: rgb(255, 0, 0);
+}
+.search-bar {
+  display: flex;
+  align-items: center;
+  width: 500px;
+  background: #f7f7f9;
+  border-radius: 50px;
+  padding: 8px 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.search-bar input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 16px;
+  color: #333;
+  padding: 10px;
+}
+
+.search-bar input::placeholder {
+  color: #666;
+}
+
+.search-bar button {
+  width: 40px;
+  height: 40px;
+  background: #e91e63;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.search-bar button:hover {
+  background: #d81b60;
+}
+
+.search-bar button i {
+  color: white;
+  font-size: 20px;
+}
+
+
+
+#main-container #section-1 #btncontainer {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  width: 100%;
+}
+
+#main-container #section-2 {
+  margin-left: 50px;
   height: 90%;
   width: 45%;
-  background-color: tomato;
-  border: 2px solid black;
   border-radius: 30px;
+  overflow: hidden;
+}
+
+#main-container #section-2 video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
