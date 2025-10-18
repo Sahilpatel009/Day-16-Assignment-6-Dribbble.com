@@ -1,6 +1,6 @@
 @font-face {
   font-family: dribbble;
-  src: url(/Unconfirmed\ 33509.crdownload);
+  src: url ();
 }
 
 @font-face {
@@ -82,7 +82,7 @@ body {
   align-items: center;
   height: 80px;
   width: 100%;
-  background-color: lightblue;
+  background-color: white;
 }
 
 #nav #icon {
@@ -110,7 +110,7 @@ body {
   height: 90%;
   display: flex;
   width: 100%;
-  background-color: lightseagreen;
+  background-color: white;
   gap: 40px;
   padding: 20px;
 }
@@ -123,20 +123,21 @@ body {
   margin-left: 50px;
   height: 90%;
   width: 40%;
-  background-color: rgb(255, 255, 255);
-  border: 2px solid black;
 }
 #main-container #section-1 h1{
+  margin-top: 20px;
   font-size: 48px;
   font-weight: 300px;
    line-height: 1.1;
+
 }
 #main-container #section-1 h2{
-  padding-top: 10px;
+  padding-top: 20px;
   font-size: 15px;
   font-weight: 100px;
    line-height: 1.1;
    color: #4E4E5E;
+   margin-bottom: 20px;
 }
 
 #main-container #section-1 #checkablebtn {
@@ -147,12 +148,22 @@ body {
   height: 50px;
   width: 100%;
   padding: 0px 10px;
+  margin-bottom: 20px;
+}
+#main-container #section-1 #checkablebtn i{
+  font-size: 20px;
 }
 #main-container #section-1 #checkablebtn button{
   font-size: 14px;
   border-radius: 30px;
   padding: 10px 20px;
   border: none;
+}
+#main-container #section-1 #checkablebtn button:hover{
+  color: white;
+  border: none;
+  background-color: rgb(31, 29, 29);
+  cursor: pointer;
 }
 
 #main-container #section-1 #searchbar {
@@ -209,6 +220,7 @@ body {
 
 
 #main-container #section-1 #btncontainer {
+  margin-top: 10px;
   padding: 10px;
   display: flex;
   align-items: center;
@@ -216,7 +228,18 @@ body {
   height: 50px;
   width: 100%;
 }
-
+#main-container #section-1 #btncontainer button {
+ font-size:10px;
+  border-radius: 30px;
+  padding: 8px 20px;
+  border: none;
+}
+#main-container #section-1 #btncontainer button:hover{
+  color: white;
+  border: none;
+  background-color: rgb(31, 29, 29);
+  cursor: pointer;
+}
 #main-container #section-2 {
   margin-left: 50px;
   height: 90%;
