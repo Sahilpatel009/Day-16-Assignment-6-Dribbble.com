@@ -25,54 +25,11 @@ body {
   height: 100%;
   width: 100%;
 }
-
-/* #main {
-  display: flex;
-  gap: 30px;
-  width: 100%;
-  height: 100%;
-  background-color: lightseagreen;
-  padding: 30px;
-}
-.card {
-  width: 300px;
-  height: 350px;
-  border-radius: 20px;
-  position: relative;
-  overflow: hidden;
-
-}
-.card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: all ease 0.3s;
-}
-.bottom {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px;
-  position: absolute;
-  height: 40%;
-  width: 100%;
-  background: linear-gradient(transparent, rgba(255, 251, 0, 0.219));
-  bottom: -40;
-  transition: all ease 0.3s;
-}
-.bottom h4{
-  color: white;
-  font-size: 30px;
-  font-weight: 400px;
-}
-.bottom h3{
-  background-color: white;
-  padding: 5px 7px;
-  border-radius: 50%;
-}
-.card:hover .bottom{
-  bottom: 0%;
-} */
+/*
+///////////////
+ ----------------------------------------------------Nav---------------------------------------------- 
+                                                                                    ////////////////////
+                                                                                                         */
 #nav {
   padding-left: 50px;
   padding-right: 50px;
@@ -104,7 +61,11 @@ body {
   text-decoration: none;
   color: black;
 }
-
+/*
+///////////////
+ ------------------------------------------Main-Container---------------------------------------------- 
+                                                                                    ////////////////////
+                                                                                                         */
 #main-container {
   height: 93%;
   display: flex;
@@ -113,7 +74,11 @@ body {
   gap: 40px;
   padding: 20px;
 }
-
+/*
+///////////////
+ --------------------------------------Main-Container-section-1----------------------------------------- 
+                                                                                    ////////////////////
+                                                                                                         */
 #main-container #section-1 {
   padding: 10px;
   position: relative;
@@ -129,7 +94,6 @@ body {
   font-size: 48px;
   font-weight: 300px;
   line-height: 1.1;
-
 }
 
 #main-container #section-1 h2 {
@@ -137,7 +101,7 @@ body {
   font-size: 15px;
   font-weight: 100px;
   line-height: 1.1;
-  color: #4E4E5E;
+  color: #4e4e5e;
   margin-bottom: 20px;
 }
 
@@ -245,10 +209,14 @@ body {
   background-color: rgb(31, 29, 29);
   cursor: pointer;
 }
-
+/*
+///////////////
+ --------------------------------------Main-Container-section-2----------------------------------------- 
+                                                                                    ////////////////////
+                                                                                                         */
 #main-container #section-2 {
   margin-left: 50px;
-  height: 85%;
+  height: 82%;
   width: 45%;
   border-radius: 30px;
   overflow: hidden;
@@ -259,23 +227,64 @@ body {
   height: 100%;
   object-fit: cover;
 }
-
+/*
+///////////////
+ --------------------------------------Card-Nav----------------------------------------- 
+                                                                                    ////////////////////
+                                                                                                         */
+ #card-nav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  background-color:white;
+  height: 60px;
+  width: 100%;
+}
+#card-nav a{
+  text-decoration: none;
+  font-size: 13px;
+  color: black;
+}
+#card-nav #b1{
+  padding: 10px 20px;
+  font-size: 15px;
+  border-radius: 8px;
+  border: none;
+  margin-right: 50px;
+}
+#card-nav #b2{
+  padding: 10px 30px;
+  font-size: 15px;
+  border-radius: 30px;
+   border: none;  
+     margin-left: 50px;
+}
+/*
+///////////////
+ --------------------------------------Main-Card-Container---------------------------------------------- 
+                                                                                    ////////////////////
+                                                                                                         */
 #main-card-container {
-  background:white;
+  background: white;
   display: flex;
   gap: 30px;
   width: 100%;
   height: 100%;
   padding: 30px;
-}
-
+  flex-wrap: ;
+}                                                                                                     
+/*
+///////////////
+ ------------------------------------------------Card--------------------------------------------------- 
+                                                                                    ////////////////////
+                                                                                                         */
 .card {
-  width: 300px;
-  height: 350px;
+  width: 274px;
+  height: 220px;
   border-radius: 20px;
   position: relative;
   overflow: hidden;
-
 }
 
 .card img {
@@ -285,7 +294,7 @@ body {
   transition: all ease 0.3s;
 }
 
-.bottom {
+.card-bottom {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -293,23 +302,23 @@ body {
   position: absolute;
   height: 40%;
   width: 100%;
-  background: linear-gradient(transparent, rgba(255, 251, 0, 0.219));
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.219));
   bottom: -40;
   transition: all ease 0.3s;
 }
 
-.bottom h4 {
+.card-bottom h4 {
   color: white;
   font-size: 30px;
   font-weight: 400px;
 }
 
-.bottom h3 {
+.card-bottom h3 {
   background-color: white;
   padding: 5px 7px;
   border-radius: 50%;
 }
 
-.card:hover .bottom {
+.card:hover .card-bottom {
   bottom: 0%;
 }
